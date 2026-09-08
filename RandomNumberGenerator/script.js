@@ -4,25 +4,24 @@ const generteNumBtnEl = document.querySelector(".generteNumBtn");
 const showNumberEl = document.querySelector(".showNumber");
 const resetBtnEl = document.querySelector(".resetBtn");
 
-function getrandom() {
+function getRandom() {
   const min = parseInt(minimumEl.value);
   const max = parseInt(maximumEl.value);
 
   if (isNaN(min) || isNaN(max) || min >= max) {
-    alert("Please write minimum and maximum Number");
+    alert("Please write correctly minimum and maximim number");
     return;
   }
 
   const randomNum = Math.floor(Math.random() * (max - min + 1) + min);
-  showNumberEl.textContent = `Your random Number is ${randomNum}`;
+  showNumberEl.textContent = `Your Random Number is : ${randomNum}`;
 }
 
 function reset() {
   minimumEl.value = 1;
   maximumEl.value = 1000;
-  showNumberEl.textContent = "Please type number";
+  showNumberEl.textContent = "Please type your random number";
 }
 
-generteNumBtnEl.addEventListener("click", getrandom);
-
+generteNumBtnEl.addEventListener("click", getRandom);
 resetBtnEl.addEventListener("click", reset);
