@@ -20,7 +20,7 @@ function getRandom() {
 function reset() {
   minimumEl.value = 1;
   maximumEl.value = 1000;
-  showNumberEl.textContent = "Please type your random number";
+  showNumberEl.textContent = "Pleasee type your random number";
 }
 
 generteNumBtnEl.addEventListener("click", getRandom);
