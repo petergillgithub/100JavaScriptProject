@@ -1,0 +1,28 @@
+body {
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 6rem;
+  background-color: white;
+  border-radius: 10px;
+}
+label {
+  font-size: 3rem;
+  font-weight: bold;
+}
+input {
+  position: relative;
+  width: 20rem;
+  height: 2rem;
+}
+.eye-icon {
+  position: absolute;
+  right: 680px;
+  top: 370px;
+  font-size: 20px;
+}
