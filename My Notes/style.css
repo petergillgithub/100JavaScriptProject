@@ -1,0 +1,51 @@
+body {
+  font-family: Poppins, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.text_area {
+  position: relative;
+  border: rgba(218, 165, 32, 0.304) normal 0.5px;
+}
+.btn {
+  position: absolute;
+  right: 14px;
+  bottom: 10px;
+  padding: 0.5rem;
+  background-color: orange;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: white;
+}
+
+.showList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.timeSpan {
+  display: block;
+  font-size: 0.75rem;
+  color: gray;
+  margin-top: 4px;
+}
+
+.deleteBtn {
+  color: white;
+  background-color: rgba(255, 47, 47, 0.807);
+  margin-top: 10px;
+  border: none;
+}
+.paragraph {
+  padding: 12px;
+  background: #f4f4f4;
+  color: black;
+  font-size: 1rem;
+  border-radius: 10px;
+}
