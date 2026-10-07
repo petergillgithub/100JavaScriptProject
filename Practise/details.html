@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="index.html">← Back to cars</a>
+    <h1 id="name"></h1>
+    <p id="price"></p>
+    <p id="fuel"></p>
+    <p id="mileage"></p>
+    <p id="seat"></p>
+
+    <script src="car.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const id = Number(params.get("id"));
+
+      const car = cars.find(function (c) {
+        return c.id === id;
+      });
+
+      if (car) {
+        document.getElementById("name").textContent = car.name;
+        document.getElementById("price").textContent = car.price;
+        document.getElementById("fuel").textContent = car.fuel;
+        document.getElementById("mileage").textContent = car.mileage;
+        document.getElementById("seat").textContent = car.seat;
+      } else {
+        document.getElementById("name").textContent = "Car not found";
+      }
+    </script>
+  </body>
+</html>

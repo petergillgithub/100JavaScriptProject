@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .card {
+        display: block;
+        width: 220px;
+        padding: 16px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        text-decoration: none;
+        color: black;
+      }
+      .card:hover {
+        border-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cars</h1>
+    <!-- <a href="details.html?id=1">Swift</a><br />
+    <a href="details.html?id=2">Creta</a><br />
+    <a href="details.html?id=3">Nexon</a><br />
+    <a href="details.html?id=4">BMW</a><br /> -->
+
+    <div id="list"></div>
+
+    <script src="car.js"></script>
+
+    <script>
+      const list = document.getElementById("list");
+
+      cars.forEach(function (car) {
+        list.innerHTML += `
+            <a class="card" href="details.html?id=${car.id}">
+              <h2>${car.name}</h2> 
+              <p>${car.fuel}</p> 
+              <p>${car.mileage}</p> 
+              <p>${car.seat}</p> 
+              </a>`;
+      });
+    </script>
+  </body>
+</html>

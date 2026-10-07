@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Flamenco:300,regular"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <h3>☕️ BREW <span>HEAVEN</span></h3>
+        <nav>
+          <ul>
+            <li><a href="#Home">HOME</a></li>
+            <li><a href="#PRODUCT">MENU</a></li>
+            <li><a href="#LOCATION">LOCATION</a></li>
+            <li><a href="#ABOUT">ABOUT</a></li>
+            <li><a href="#CONTACT">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="btns">
+          <button class="signInBtn">Sign In</button>
+          <button class="orderOnlinebtn">Order Online</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main-section">
+      <div class="contentSection">
+        <div class="content">
+          <div class="image">
+            <img class="main-img" src="assets/photo-2.avif" alt="" />
+          </div>
+
+          <div class="content-info">
+            <h1>Great Coffe ☕️ <span>Better Moments</span></h1>
+            <p>
+              Take a break, savour your favourite brew, and make yourself at
+              home at The Brew Heaven.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Slider Section -->
+    <section class="slider-section" id="slider">
+      <h1 class="slider-info">☕️ Discover Your Perfect Brew</h1>
+      <p class="slider-info-paragraph">
+        From bold espresso to refreshing iced favourites, <br />
+        find your perfect cup.
+      </p>
+      <div class="slides" id="slides">
+        <div class="slider-track" id="sliderTrack">
+          <div class="sliderwrapper">
+            <img
+              class="slide"
+              src="sliderphotos/americano.avif"
+              alt="americanoCoffee"
+            />
+            <h3>Americano Coffee</h3>
+            <p>
+              Rich espresso blended with hot water for a smooth, bold flavour.
+              Enjoy it black or add a splash of milk to make it your own.
+            </p>
+          </div>
+          <div class="sliderwrapper">
+            <img
+              class="slide"
+              src="sliderphotos/ColdBreq.avif"
+              alt="ColdBrewCoffe"
+            />
+            <h3>Cold Brew Coffee</h3>
+            <p>
+              Slowly steeped in cold water for a smooth, mellow flavour. Served
+              over ice for a refreshing coffee break.
+            </p>
+          </div>
+          <div class="sliderwrapper">
+            <img
+              class="slide"
+              src="sliderphotos/ColdCoffee.avif"
+              alt="ColdCoffee"
+            />
+            <h3>Cold Coffee</h3>
+            <p>
+              Chilled coffee blended with milk and ice for a creamy, refreshing
+              treat. A little sweetness makes every sip even more enjoyable.
+            </p>
+          </div>
+          <div class="sliderwrapper">
+            <img
+              class="slide"
+              src="sliderphotos/Iced-Latte.avif"
+              alt="IcedLatteCoffee"
+            />
+            <h3>Iced Latte</h3>
+            <p>
+              Rich espresso poured over chilled milk and ice for a smooth,
+              creamy taste. A refreshing way to enjoy your daily coffee.
+            </p>
+          </div>
+          <div class="sliderwrapper">
+            <img
+              class="slide"
+              src="sliderphotos/Mocca.avif"
+              alt="MoccaCoffee"
+            />
+            <h3>Mocha Coffee</h3>
+            <p>
+              Rich espresso meets chocolate and steamed milk for a smooth,
+              creamy treat. A delicious blend of bold coffee and chocolate
+              sweetness.
+            </p>
+          </div>
+        </div>
+        <button class="prev-btn" type="button" aria-label="prev slide">
+          ❮
+        </button>
+        <button class="next-btn" type="button" aria-label="Next slide">
+          ❯
+        </button>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="PRODUCT">
+      <div class="menu-head">
+        <h3>OUR SELECTION</h3>
+        <h2>The Menu</h2>
+        <p>
+          Single-origin beans, roasted in small batches and prepared <br />
+          fresh to order.
+        </p>
+      </div>
+      <div class="menu-tabs">
+        <button class="menu-btn active">ALL</button>
+        <button class="menu-btn">HOT COFFEE</button>
+        <button class="menu-btn">COLD COFFEE</button>
+        <button class="menu-btn">BAKERY</button>
+      </div>
+      <!-- Menu content -->
+      <div class="menu-content grid">
+        <!-- Group-1 Hot Coffee -->
+        <div class="group">
+          <h3 class="title-menu">Hot Coffee</h3>
+          <div class="items">
+            <div class="item-info">
+              <span class="name">Expresso</span>
+              <span class="dots"></span>
+              <span class="price">£2.20</span>
+            </div>
+            <p class="desc">
+              A concentrated double shot with a rich, golden crema.
+            </p>
+          </div>
+          <!-- HotCoffee Content Americano -->
+          <div class="items">
+            <div class="item-info">
+              <span class="name">Americano</span>
+              <span class="dots"></span>
+              <span class="price">£2.80</span>
+            </div>
+            <p class="desc">
+              Espresso lengthened with hot water for a smooth, bold cup.
+            </p>
+          </div>
+          <!-- Hot Coffee Content Cappuccino  -->
+          <div class="items">
+            <div class="item-info">
+              <span class="name">Cappuccino</span>
+              <span class="dots"></span>
+              <span class="price">£3.20</span>
+            </div>
+            <p class="desc">
+              Espresso with steamed milk and a thick layer of microfoam.
+            </p>
+          </div>
+          <!-- Hot Coffee Content Mocha -->
+          <div class="items">
+            <div class="item-info">
+              <span class="name">Mocha</span>
+              <span class="dots"></span>
+              <span class="price">£3.60</span>
+            </div>
+            <p class="desc">
+              Espresso, dark chocolate and steamed milk, finished with cream.
+            </p>
+          </div>
+        </div>
+
+        <!-- Group-2 Cold Coffee -->
+        <div class="group">
+          <h3>Cold Coffee</h3>
+          <div class="items">
+            <div class="item-info">
+              <span class="name">Iced Latte </span>
+              <span class="dots"></span>
+              <span class="price">£3.50</span>
+            </div>
+            <p class="desc">Espresso poured over chilled milk and ice.</p>
+          </div>
+          <!-- Cold Brew Content Cold Brew -->
+          <div class="items">
+            <div class="item-info">
+              <span class="name">Cold Brew </span>
+              <span class="dots"></span>
+              <span class="price">£3.80</span>
+            </div>
+            <p class="desc">
+              Steeped for 18 hours in cold water. Mellow and naturally sweet.
+            </p>
+          </div>
+          <!-- Cold Coffee Content Cold Brew  -->
+          <div class="items">
+            <div class="item-info">
+              <span class="name">Cold Coffee</span>
+              <span class="dots"></span>
+              <span class="price">£3.60</span>
+            </div>
+            <p class="desc">
+              Chilled coffee blended with milk and ice for a creamy finish.
+            </p>
+          </div>
+          <!--Caramel Iced Latte Content Caramel Iced Latte -->
+          <div class="items">
+            <div class="item-info">
+              <span class="name">Caramel Iced Latte</span>
+              <span class="dots"></span>
+              <span class="price">£3.60</span>
+            </div>
+            <p class="desc">
+              Espresso and chilled milk with sweet caramel over ice.
+            </p>
+          </div>
+        </div>
+        <!-- Group-3 Bakery -->
+        <div class="group">
+          <h3>Bakery</h3>
+          <div class="items">
+            <div class="item-info">
+              <span class="name">Butter Croissant </span>
+              <span class="dots"></span>
+              <span class="price">£2.50</span>
+            </div>
+            <p class="desc">Baked fresh every morning with French butter.</p>
+          </div>
+          <!-- Chocolate Muffin -->
+          <div class="items">
+            <div class="item-info">
+              <span class="name">Chocolate Muffin </span>
+              <span class="dots"></span>
+              <span class="price">£2.90</span>
+            </div>
+            <p class="desc">Soft crumb with melted dark chocolate chips.</p>
+          </div>
+          <!-- Toasted Cheese Sandwich -->
+          <div class="items">
+            <div class="item-info">
+              <span class="name">Toasted Cheese Sandwich </span>
+              <span class="dots"></span>
+              <span class="price">£4.20</span>
+            </div>
+            <p class="desc">
+              Sourdough, mature cheddar and a touch of mustard.
+            </p>
+          </div>
+          <!--Caramel Iced Latte Content Caramel Iced Latte -->
+          <div class="items">
+            <div class="item-info">
+              <span class="name">Caramel Iced Latte</span>
+              <span class="dots"></span>
+              <span class="price">£3.60</span>
+            </div>
+            <p class="desc">
+              Espresso and chilled milk with sweet caramel over ice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

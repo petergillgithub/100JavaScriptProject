@@ -1,0 +1,119 @@
+body {
+  font-family: Gulzar, sans-serif;
+  background: #f4f5f7;
+  margin: 0;
+  background-image: url("https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyfGVufDB8fDB8fHww");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 24px;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.carImage {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: hsla(0, 0%, 100%, 0.875);
+  border: 1px solid #e2e5ea;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.model {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin: 4px 0;
+}
+
+.specs {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 18px 12px 44px;
+  font-size: 1rem;
+  border: 2px solid #e2e5ea;
+  border-radius: 30px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.searchInput:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.searchInput::placeholder {
+  color: #9ca3af;
+}
+
+.searchWrapper {
+  position: relative;
+  max-width: 500px;
+  margin: 24px auto;
+}
+
+.searchWrapper::before {
+  content: "🔍";
+  position: absolute;
+  left: 16px;
+  top: 75%;
+  transform: translateY(-50%);
+  font-size: 0.95rem;
+}
+
+.sortLowHigh,
+.sortHighLow {
+  margin: 2px;
+  padding: 5px 5px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  border: none;
+}
+.detailsContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.detailsImage {
+  width: 100%;
+  border-radius: 8px;
+}
